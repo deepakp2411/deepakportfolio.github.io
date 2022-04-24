@@ -1,6 +1,37 @@
-.header{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{ 
     background-color: black;
-    /* min-height: 150vh; */
-    /* color: white; */
+    color: white;
+    min-height: 40vh;
+    
+
+}
+.logo{
+    padding: 20px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.nav-bar .items{
+    /* display: flex; */
+    display: inline-block;
+    padding: 30px 20px;
+    
+}
+.nav-bar .items a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    margin-left: auto;
+    /* margin: (50%-50px) ; */
 
 }
