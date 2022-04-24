@@ -30,8 +30,5 @@
 }
 .form{
     position: absolute;
-    top: 50%;
-    margin-left: auto;
-    /* margin: (50%-50px) ; */
-
+    top: 50%;   
 }
