@@ -1,5 +1,7 @@
-// for smooth scrolling 
-const header = document.querySelector("header");
-window.addEventListener('scroll', function(){
-    header.classList.toggle('sticky',window.scrollY > 0);
+var typed = document.querySelector(".auto-input");
+typed = new Typed(".auto-input",{
+    strings: ["Full stack Devloper","React Js Developer","Freelancer"],
+    typeSpeed: 100,
+    backspeed: 100,
+    loop: true
 });

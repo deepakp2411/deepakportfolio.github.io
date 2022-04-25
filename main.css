@@ -1,187 +1,113 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
 }
-
-section {
-    padding: 100px 200px;
-}
-
-.main {
-    position: relative;
+.skills{
+    width: 100%;
+    height: 100vh;
+    background: #223;
     display: flex;
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
-    background: url('img/ban-2.jpeg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
-.main .content {
-    max-width: 800px;
-
-}
-
-.main .content h2 {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 500;
-
-}
-
-.main .content h2 span {
-    font-size: 2.8em;
-    font-weight: 600;
-
-}
-
-.animated-text {
-    position: relative;
-    height: 70px;
-    overflow: hidden;
-
-}
-
-.animated-text h3 {
-    color: #4e9eff;
-    font-size: 3em;
-    font-weight: 700;
-    line-height: 70px;
+.tools h2{
+    font-weight: 400;
     letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: white;
 }
-
-.animated-text h3:nth-child(1) {
-    animation: text-move 10s infinite;
+.progress-bar{
+    background: #959595;
+    width: 500px;
+    height: 10px;
+    border-radius: 5px;
 }
-
-@keyframes text-move {
-    0% {
-        margin-top: 0;
-    }
-
-    25% {
-        margin-top: -70px;
-    }
-
-    50% {
-        margin-top: -140px;
-    }
-
-    75% {
-        margin-top: -70px;
-    }
-
-    100% {
-        margin-top: 0;
-    }
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+    /* background: red; */
 }
-
-.btn {
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
     color: #fff;
-    background-color: #3a6cf4;
-    font-size: 1em;
-    display: inline-block;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
-    border-radius: 2px;
-    transition: 0.5s ease;
-
-}
-
-.btn:hover {
-    background: black;
-}
-
-.media-icon {
-    margin-top: 50px;
-}
-
-.media-icon a {
-    color: #fff;
-    font-size: 25px;
-    margin-right: 30px;
-
-}
-
-header {
-    z-index: 999;
-    position: fixed;
-    background: rgba(255, 255,255,0.1);
-    top: 0;
-    left: 0;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    transition: 0.5s ease;
-}
-header.sticky{
-    background: #3a6cf4;
-    padding: 10px 200px;
-}
-header .logo{
-    color: #fff;
-    font-size: 1.8em;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-header .navigation{
-    position: relative;
-}
-header .navigation a{
-    color: #fff;
-    font-size: 1em;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 30px;
-
-}
-header .navigation a:hover{
-    color: #3a6cf4;
-}
-header .sticky.navigation a:hover{
-    color: #000;
-}
-body{
-    min-height: 110vh;
-}
-.title{
-    width: 100%;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
-.section-title{
-    position: relative;
-    color:#3a6cf4;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 60px
+.html{
+    background: #e91e63;
+    animation: html 1s linear forwards;
 }
-.section-title::before{
-    content: "";
-    position: relative;
-    top: 56px;
-    left: 50%;
-    width: 140px;
-    height: 4px;
-    background: #3a6cf4;
-    transform: translateX(-50%);
+.html{
+    background: #e91e63;
+    animation: html 1s linear forwards;
 }
-.section-title::after{
-    content: " ";
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    width: 15px;
-    height: 15px;
+.css{
+    background: #00bcd4;
+    animation: css 1s linear forwards;
+}
+.javajs{
+    background: #ffeb3b;
+    animation: javajs 1s linear forwards;
+}
+.react{
+    background: #e23ef4;
+    animation: react 1s linear forwards;
+}
+.node{
+    background: #e914;
+    animation: node 1s linear forwards;
+}
+.html span{
+    border: 1px solid #e91e63;
+}
+.html span{
+    border: 1px solid #e91e63;
+}
+.css span{
+    border: 1px solid #e91e63;
+}
+.javajs span{
+    border: 1px solid #e91e;
+}
+.react span{
+    border: 1px solid #e91e63;
+}
+.node span{
+    border: 1px solid #e91e63;
+}
+@keyframes html{
+    100%{
+        width: 95%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 89%;
+    }
+}
+@keyframes javajs{
+    100%{
+        width: 79%;
+    }
+}
+@keyframes react{
+    100%{
+        width: 75%;
+    }
+}
+@keyframes node{
+    100%{
+        width: 75%;
+    }
 }
