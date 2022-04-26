@@ -1,113 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
-.skills{
-    width: 100%;
+.i{
+    display: flex;
     height: 100vh;
-    background: #223;
+}
+.i-left{
+    flex: 1;
+}
+.i-right{
+    flex: 1;
+    position: relative;
+    /* right: 60px; */
+}
+.i-left-wrapper{
+    padding: 50px;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.i-intro{
+    font-size: 30px;
+    font-weight: 300;
+}
+.i-name{
+    font-size: 60px;
+}
+.i-title{
+    height: 50px;
+    overflow: hidden;
+}
+.i-title-item{
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+.i-title-wrapper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+@keyframes move {
+    25%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    75%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
 }
 
-.tools h2{
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    color: white;
+.i-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    right: 68px;
 }
-.progress-bar{
-    background: #959595;
-    width: 500px;
-    height: 10px;
-    border-radius: 5px;
+.i-bg{
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right:0;
 }
-.progress-bar div{
-    height: 10px;
-    border-radius: 5px;
-    width: 0%;
-    /* background: red; */
+.a{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
 }
-.progress-bar div span{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background: #222;
-    float: right;
-    margin-top: -15px;
-    margin-right: -20px;
-    color: #fff;
+.a-left{
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    height: 100%;
+
 }
-.html{
-    background: #e91e63;
-    animation: html 1s linear forwards;
+.a-right{
+    flex: 1;
+
 }
-.html{
-    background: #e91e63;
-    animation: html 1s linear forwards;
+.a-card.bg{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: #3333;
 }
-.css{
-    background: #00bcd4;
-    animation: css 1s linear forwards;
+.a-card{
+    width: 60%;
+    height: 70vh;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+
 }
-.javajs{
-    background: #ffeb3b;
-    animation: javajs 1s linear forwards;
+.a-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.react{
-    background: #e23ef4;
-    animation: react 1s linear forwards;
-}
-.node{
-    background: #e914;
-    animation: node 1s linear forwards;
-}
-.html span{
-    border: 1px solid #e91e63;
-}
-.html span{
-    border: 1px solid #e91e63;
-}
-.css span{
-    border: 1px solid #e91e63;
-}
-.javajs span{
-    border: 1px solid #e91e;
-}
-.react span{
-    border: 1px solid #e91e63;
-}
-.node span{
-    border: 1px solid #e91e63;
-}
-@keyframes html{
-    100%{
-        width: 95%;
-    }
-}
-@keyframes css{
-    100%{
-        width: 89%;
-    }
-}
-@keyframes javajs{
-    100%{
-        width: 79%;
-    }
-}
-@keyframes react{
-    100%{
-        width: 75%;
-    }
-}
-@keyframes node{
-    100%{
-        width: 75%;
-    }
+.a-award{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+
 }
