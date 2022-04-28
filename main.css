@@ -6,163 +6,19 @@
     box-sizing: border-box;
 
 }
-body{
-    background: thistle;
-}
-.i{
-    display: flex;
+.container{
+    width:100%;
     height: 100vh;
-}
-.i-left{
-    flex: 1;
-}
-.i-right{
-    flex: 1;
-    position: relative;
-    /* right: 60px; */
-}
-.i-left-wrapper{
-    padding: 50px;
-    height: 50%;
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-
-}
-.i-intro{
-    font-size: 20px;
-    font-weight: 300;
-}
-.i-name{
-    font-size: 2rem;
-}
-.i-title{
-    height: 25vh;
-    overflow: hidden;
-}
-.i-title-item{
-    height: 25vh;
-    font-size: 2rem;
-    font-weight: bold;
-    color: green;
-    display: flex;
-    align-items: center;
-}
-.i-title-wrapper{
-    height: 100%;
-    animation: move 10s ease-in-out infinite alternate;
-}
-@keyframes move {
-    25%{
-        transform: translateY(-50px);
-    }
-    50%{
-        transform: translateY(-100px);
-    }
-    75%{
-        transform: translateY(-150px);
-    }
-    100%{
-        transform: translateY(-200px);
-    }
-}
-
-.i-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    position: absolute;
-
-}
-.i-bg{
-    
-    background-color: blueviolet;
-    width: 20%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right:0;
-}
-.a{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-
-}
-.a-left{
-    flex: 1;
+    background: #2b323c;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    height: 100%;
-
 }
-.a-right{
-    flex: 1;
-
+.containr h1{
+    font-size: 3rem;
+    font-weight: 600;
 }
-.a-card.bg{
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    background: cornflowerblue;
+span{
+    color: #fff724;
 }
-.a-card{
-    width: 70%;
-    height: 50vh;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-
-}
-.a-img{
-    width: 70%;
-    height: 50vh;
-    border-radius: 3rem 4rem;
-    object-fit: cover;
-}
-.i-desc{
-    margin-top: 1rem;
-}
-
-.media-icon{
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-}
-.cv{
-    display: inline-block;
-    padding: 20px 30px;
-    margin: 30px 40px;
-    background-color: teal;
-    color: beige;
-    border-radius: 20px 30px;
-}
-.cv-i{
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight:800;
-}
-@media screen and (max-width:480px){
-    .i-img{
-        width: auto;
-        background-color: aqua;
-    }
-    .i-title-wrapper{
-        height: 50%;
-    }
-    .i-intro{
-        font-size: 3rem;
-    }
-    
-}
-
-
-
-
-
-
-
