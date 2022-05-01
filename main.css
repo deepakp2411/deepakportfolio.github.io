@@ -223,7 +223,6 @@ img{
     font-size: 1.3rem;
     font-weight: bold;
     color: crimson;
-    /* background-color: blueviolet; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -471,11 +470,11 @@ img{
 
 .project{
     background-color:aquamarine;
-    padding: 0
+    padding: 0;
 
 }
 .project_container{
-    row-gap: 2rem
+    row-gap: 2rem;
 }
 .project_data{
     text-align: center;
