@@ -210,6 +210,38 @@ img{
     font-weight: var(--font-semi-bold);
 
 }
+.i-title{
+    height: 2rem;
+    overflow: hidden;
+}
+.i-title-wrapper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+.i-title-item{
+    height: 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: crimson;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes move{
+    25%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    75%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
 .home_profession{
     font-size: 1rem;
     color: var(--first-color-dark);
@@ -233,7 +265,7 @@ img{
     transition: .3s;
 }
 .home_social-link:hover{
-    background-color: blue;
+    background-color:darkblue;
 }
 .home_button{
     width: 100%;
@@ -266,11 +298,15 @@ img{
 }
 .about_description{
     margin-bottom: var(--mb-4);
+    margin-bottom: 3rem;
+
+
 }
 .about_img{
     width: 150px;
     border-radius: .5rem;
     margin: 0 auto;
+    
 }
 .about_information{
     margin-bottom: var(--mb-4);
