@@ -362,7 +362,7 @@ img{
     background-color: var(--first-color);
 }
 .skills_html{
-    width: 80%;
+    width: 95%;
 }
 .skills_js{
     width: 78%;
@@ -378,6 +378,15 @@ img{
 }
 .skills_mongo{
     width: 80%;
+}
+.skills_css{
+    width: 72%;
+}
+.skills_git{
+    width: 56%;
+}
+.skills_github{
+    width: 69%;
 }
 .education_container{
     row-gap: 2rem;
