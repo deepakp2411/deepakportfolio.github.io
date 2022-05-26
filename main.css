@@ -362,31 +362,31 @@ img{
     background-color: var(--first-color);
 }
 .skills_html{
-    width: 95%;
+    width: 100%;
 }
 .skills_js{
-    width: 78%;
+    width: 100%;
 }
 .skills_react{
-    width: 72%;
+    width: 100%;
 }
 .skills_node{
-    width: 80%;
+    width: 100%;
 }
 .skills_express{
-    width: 70%;
+    width: 100%;
 }
 .skills_mongo{
-    width: 80%;
+    width:100%;
 }
 .skills_css{
-    width: 72%;
+    width: 100%;
 }
 .skills_git{
-    width: 56%;
+    width: 100%;
 }
 .skills_github{
-    width: 69%;
+    width: 100%;
 }
 .education_container{
     row-gap: 2rem;
